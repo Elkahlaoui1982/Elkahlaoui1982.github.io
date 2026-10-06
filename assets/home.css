@@ -194,3 +194,6 @@
   .home-link{display:none}
   .platform-card-v4{grid-template-columns:46px 1fr auto}
 }
+.platform-icon-v4 svg{width:28px;height:28px}
+.engagement-mark.logo{width:24px;height:24px;display:grid;place-items:center}
+.engagement-mark.logo img{width:22px;height:22px;object-fit:contain;display:block}
