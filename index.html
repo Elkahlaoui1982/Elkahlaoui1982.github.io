@@ -8,27 +8,107 @@
 <link rel="stylesheet" href="assets/styles.css"><link rel="stylesheet" href="assets/home.css">
 </head>
 <body class="home-v3" data-page="home">
-<header class="site-header"><div class="container nav-shell"><a class="brand" href="index.html" aria-label="Abderrahim Elkahlaoui home"><span class="brand-mark">AE</span><span class="brand-copy"><strong>ABDERRAHIM ELKAHLAOUI</strong><span>Security Researcher</span></span></a><nav class="desktop-nav" aria-label="Primary navigation"><a class="active" href="index.html">Home</a><a href="findings.html">Findings</a><a href="engagements.html">Engagements</a><a href="research.html">Research</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="home-tools"><form class="home-search" action="findings.html" method="get" role="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input name="q" type="search" placeholder="Search findings, programs…" aria-label="Search findings"></form><a class="nav-cta" href="contact.html">Get in touch ↗</a></div><button class="menu-button" type="button" data-menu-button aria-label="Open navigation" aria-expanded="false">☰</button></div><nav class="mobile-nav" data-mobile-nav><a class="active" href="index.html">Home</a><a href="findings.html">Findings</a><a href="engagements.html">Engagements</a><a href="research.html">Research</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>
-<main class="home-dashboard">
-<section class="hero-dashboard">
-<div class="hero-copy-panel"><span class="eyebrow">Security Researcher</span><h1>Abderrahim <span>Elkahlaoui</span></h1><div class="hero-kicker">Finding. Securing. Improving the Internet.</div><p class="hero-copy">I identify, validate and responsibly report security weaknesses across bug bounty programs and VDPs, with a strong focus on authorization, application security, APIs, integrations, AI agents and multi-tenant systems.</p><div class="hero-actions"><a class="button primary" href="findings.html">→ View Findings</a><a class="button ghost" href="research.html">▣ Explore Research</a></div></div>
-<div class="hero-metrics">
-<div class="metric-card"><div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="M10 13h5M10 17h5"/></svg></div><div><strong>44</strong><span>Finding titles</span><small>Across multiple programs</small></div></div>
-<div class="metric-card"><div class="metric-icon amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4h8v3a4 4 0 0 1-8 0z"/><path d="M6 5H3v2a4 4 0 0 0 4 4M18 5h3v2a4 4 0 0 1-4 4M12 11v5M9 20h6M10 16h4"/></svg></div><div><strong>30+</strong><span>Engagements</span><small>Bug bounty & VDP tracks</small></div></div>
-<div class="metric-card"><div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><div><strong>3</strong><span>Main platforms</span><small>Bugcrowd · HackerOne · Intigriti</small></div></div>
-<div class="metric-card"><div class="metric-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V9M10 18V5M16 18v-8M22 18V3"/></svg></div><div><strong>Active</strong><span>Ongoing research</span><small>Continuous source & E2E work</small></div></div>
-</div>
-<div class="hero-scene" aria-label="Security research workspace illustration"><div class="scene-window"></div><div class="scene-city"></div><div class="books"><div class="book" data-label="ACCESS CONTROL"></div><div class="book" data-label="API SECURITY"></div><div class="book" data-label="CLOUD SECURITY"></div><div class="book" data-label="APP SECURITY"></div></div><div class="laptop"><div class="laptop-screen"><div class="screen-code"></div><div class="globe"></div><i class="network-node n1"></i><i class="network-node n2"></i><i class="network-node n3"></i><i class="network-node n4"></i></div></div><div class="mug"></div><div class="scene-quote">“Security is not a product; it’s a continuous process of finding, reporting and helping to fix.”</div><div class="desk"></div></div>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="index.html" aria-label="Abderrahim Elkahlaoui home"><span class="brand-mark">AE</span><span class="brand-copy"><strong>Abderrahim Elkahlaoui</strong><span>Security Researcher</span></span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a class="active" href="index.html">Home</a><a href="findings.html">Findings</a><a href="engagements.html">Engagements</a><a href="research.html">Research</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="home-tools"><form class="home-search" action="findings.html" method="get"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input name="q" type="search" placeholder="Search findings, programs…" aria-label="Search findings"></form><a class="nav-cta" href="contact.html">Get in touch ↗</a></div>
+    <button class="menu-button" type="button" data-menu-button aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" data-mobile-nav><a class="active" href="index.html">Home</a><a href="findings.html">Findings</a><a href="engagements.html">Engagements</a><a href="research.html">Research</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</header>
+
+<main>
+<section class="home-shell home-hero">
+  <div class="hero-copy-col">
+    <span class="eyebrow">Independent Security Researcher</span>
+    <h1>Abderrahim <span>Elkahlaoui</span></h1>
+    <div class="hero-tagline">Finding. Validating. Reporting.</div>
+    <p>I research and responsibly report security weaknesses across bug bounty programs, VDPs and tracked security engagements, with a strong focus on authorization, APIs, application logic, integrations, AI agents and multi-tenant systems.</p>
+    <div class="hero-actions"><a class="button primary" href="findings.html">→ View Findings</a><a class="button ghost" href="research.html">▣ Explore Research</a></div>
+  </div>
+
+  <div class="hero-stat-col">
+    <div class="hero-stat"><div class="hero-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M22 12h-3"/></svg></div><div><strong>44</strong><span>Documented finding titles</span><small>Across multiple research tracks</small></div></div>
+    <div class="hero-stat"><div class="hero-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4h8v3a4 4 0 0 1-8 0z"/><path d="M6 5H3v2a4 4 0 0 0 4 4M18 5h3v2a4 4 0 0 1-4 4M12 11v5M9 20h6"/></svg></div><div><strong>30+</strong><span>Tracked engagements</span><small>Bug bounty, VDP and research programs</small></div></div>
+    <div class="hero-stat"><div class="hero-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><div><strong>3</strong><span>Main bounty platforms</span><small>Bugcrowd · HackerOne · Intigriti</small></div></div>
+    <div class="hero-stat"><div class="hero-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V9M10 18V5M16 18v-8M22 18V3"/></svg></div><div><strong>2026</strong><span>Active research year</span><small>Ongoing source review & E2E validation</small></div></div>
+  </div>
+
+  <div class="hero-photo" role="img" aria-label="Modern security research workspace overlooking a city">
+    <div class="hero-quote">“Security research is a continuous process of finding, validating, reporting and helping to improve systems.”</div>
+    <div class="hero-photo-label"><i></i> Security research workspace</div>
+  </div>
 </section>
-<section class="dashboard-section"><div class="section-bar"><div class="section-title-wrap"><div class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg></div><div><h2>Platforms & Engagements</h2><p>Research footprint across major bounty ecosystems and coordinated disclosure programs.</p></div></div><a class="mini-link" href="engagements.html">View All Engagements →</a></div><div class="platform-dashboard"><div class="platform-dash-card"><div class="platform-logo bc">BC</div><div><strong>Bugcrowd</strong><small>Finding titles tracked</small></div><div class="platform-count">40<span>titles</span></div></div><div class="platform-dash-card"><div class="platform-logo h1">H1</div><div><strong>HackerOne</strong><small>Finding titles tracked</small></div><div class="platform-count">3<span>titles</span></div></div><div class="platform-dash-card"><div class="platform-logo in">IN</div><div><strong>Intigriti</strong><small>Finding titles tracked</small></div><div class="platform-count">1<span>title</span></div></div><div class="platform-dash-card"><div class="platform-logo vdp">VDP</div><div><strong>Government VDPs</strong><small>NASA · DHS · CMS & more</small></div><div class="platform-count">21<span>title entries</span></div></div><div class="platform-dash-card"><div class="platform-logo private">+</div><div><strong>Research Programs</strong><small>Public, private & tracked</small></div><div class="platform-count">30+<span>programs</span></div></div></div></section>
-<section class="dashboard-main"><div><div class="section-bar"><div class="section-title-wrap"><div class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-6 3 12 3-9 2 6h4"/></svg></div><div><h2>Selected Findings</h2><p>Public-safe titles from the research archive — titles only.</p></div></div><a class="mini-link" href="findings.html">View All Findings →</a></div><div class="latest-findings">
-<div class="finding-tile"><div class="finding-logo">MM</div><div><strong>Jira plugin bypasses ABAC file-download policy</strong><span>Mattermost · Authorization</span></div></div><div class="finding-tile"><div class="finding-logo">AI</div><div><strong>Blocked AI Agent execution through regeneration path</strong><span>Mattermost · Agent security</span></div></div><div class="finding-tile"><div class="finding-logo">OA</div><div><strong>Share link exposes uploaded document text in page source</strong><span>OpenAI · Data boundary</span></div></div><div class="finding-tile"><div class="finding-logo">FB</div><div><strong>BAM add_user accepts forged resharing source</strong><span>Fireblocks MPC · Protocol</span></div></div><div class="finding-tile"><div class="finding-logo">NS</div><div><strong>HDTN BPSec missing-operation bypass to root RCE</strong><span>NASA VDP · Server-side</span></div></div><div class="finding-tile"><div class="finding-logo">DH</div><div><strong>Regional Admin can delete higher-privileged Global Admin</strong><span>DHS VDP · Authorization</span></div></div><div class="finding-tile"><div class="finding-logo">AR</div><div><strong>Pre-admitted transactions bypass address denylist enforcement</strong><span>Arc · Blockchain</span></div></div><div class="finding-tile"><div class="finding-logo">RI</div><div><strong>Whois route authorisation bypass via mnt-routes gap</strong><span>RIPE NCC · Access control</span></div></div><div class="finding-tile"><div class="finding-logo">AV</div><div><strong>Kafka producer can trigger unintended mass UPDATE</strong><span>Aiven · Data platform</span></div></div>
-</div></div>
-<aside class="research-panel"><div class="section-bar"><div class="section-title-wrap"><div class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a3 3 0 0 1 3-3h5v18H7a3 3 0 0 0-3 3z"/><path d="M20 5a3 3 0 0 0-3-3h-5v18h5a3 3 0 0 1 3 3z"/></svg></div><div><h2>Research Areas</h2><p>Where most of the investigation concentrates.</p></div></div></div><div class="research-list">
-<div class="research-item"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><div><strong>Authorization & Authentication</strong><span>RBAC, ABAC, stale access, role transitions</span></div></div><div class="research-item"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div><div><strong>API & Web Security</strong><span>REST, GraphQL, object boundaries, business logic</span></div></div><div class="research-item"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 18a4 4 0 0 1 1-7.9A6 6 0 0 1 17.5 8 5 5 0 1 1 18 18z"/></svg></div><div><strong>Cloud & Infrastructure</strong><span>Data platforms, IAM, processing boundaries</span></div></div><div class="research-item"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M2 20a6 6 0 0 1 12 0M14 19a4 4 0 0 1 8 0"/></svg></div><div><strong>Collaboration & Multi-tenant</strong><span>Permissions, cross-tenant isolation, integrations</span></div></div><div class="research-item"><div class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 8 4v10l-8 4-8-4V7z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg></div><div><strong>AI Agents & Protocols</strong><span>Agent authorization, crypto and blockchain logic</span></div></div>
-</div></aside></section>
-<section class="dashboard-section"><div class="section-bar"><div class="section-title-wrap"><div class="section-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V6l8-3 8 3v15M8 9h2M14 9h2M8 13h2M14 13h2M8 17h2M14 17h2"/></svg></div><div><h2>Selected Engagements</h2><p>Concrete programs represented in the research tracker.</p></div></div><a class="mini-link" href="engagements.html">View All →</a></div><div class="engagement-row"><div class="engagement-logo"><div class="mark">M</div><b>Mattermost</b><small>Bugcrowd</small></div><div class="engagement-logo"><div class="mark">O</div><b>OpenAI</b><small>Bugcrowd</small></div><div class="engagement-logo"><div class="mark">F</div><b>Fireblocks</b><small>Bugcrowd</small></div><div class="engagement-logo"><div class="mark">N</div><b>NASA</b><small>VDP</small></div><div class="engagement-logo"><div class="mark">D</div><b>DHS</b><small>VDP</small></div><div class="engagement-logo"><div class="mark">A</div><b>Arc</b><small>HackerOne</small></div><div class="engagement-logo"><div class="mark">R</div><b>RIPE NCC</b><small>Intigriti</small></div><div class="engagement-logo"><div class="mark">AS</div><b>Asana</b><small>Bugcrowd</small></div><div class="engagement-logo"><div class="mark">AV</div><b>Aiven</b><small>Bugcrowd</small></div><div class="engagement-logo"><div class="mark">CH</div><b>ClickHouse</b><small>Research</small></div></div></section>
+
+<section class="home-shell home-section">
+  <div class="home-section-head">
+    <div class="home-title"><div class="home-title-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg></div><div><h2>Platforms & Engagements</h2><p>Research footprint across bounty ecosystems and coordinated disclosure programs.</p></div></div>
+    <a class="home-link" href="engagements.html">View All Engagements →</a>
+  </div>
+  <div class="platform-row">
+    <div class="platform-card-v4"><div class="platform-icon-v4 bc">b</div><div><strong>Bugcrowd</strong><small>Finding titles tracked</small></div><div class="platform-count-v4">40<span>titles</span></div></div>
+    <div class="platform-card-v4"><div class="platform-icon-v4 h1">H1</div><div><strong>HackerOne</strong><small>Finding titles tracked</small></div><div class="platform-count-v4">3<span>titles</span></div></div>
+    <div class="platform-card-v4"><div class="platform-icon-v4 in">IN</div><div><strong>Intigriti</strong><small>Finding titles tracked</small></div><div class="platform-count-v4">1<span>title</span></div></div>
+    <div class="platform-card-v4"><div class="platform-icon-v4 vdp">✓</div><div><strong>Government VDPs</strong><small>NASA · DHS · CMS & others</small></div><div class="platform-count-v4">VDP<span>research</span></div></div>
+    <div class="platform-card-v4"><div class="platform-icon-v4 pr">+</div><div><strong>Research Programs</strong><small>Public, private & tracked</small></div><div class="platform-count-v4">30+<span>programs</span></div></div>
+  </div>
+</section>
+
+<section class="home-shell home-section home-content-grid">
+  <div>
+    <div class="home-section-head">
+      <div class="home-title"><div class="home-title-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2-6 3 12 3-9 2 6h4"/></svg></div><div><h2>Selected Findings</h2><p>Public-safe titles from the archive — no report bodies or private PoCs.</p></div></div>
+      <a class="home-link" href="findings.html">View All Findings →</a>
+    </div>
+    <div class="finding-grid-v4">
+      <div class="finding-card-v4"><div class="finding-brand">MM</div><div><strong>Jira plugin bypasses ABAC file-download policy</strong><small>Mattermost · authorization boundary</small></div><span class="finding-badge">AUTHZ</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">AI</div><div><strong>Blocked AI Agent execution through regeneration path</strong><small>Mattermost · agent authorization</small></div><span class="finding-badge">AGENT</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">OA</div><div><strong>Share link exposes uploaded document text in page source</strong><small>OpenAI · data boundary</small></div><span class="finding-badge">DATA</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">FB</div><div><strong>BAM add_user accepts forged resharing source</strong><small>Fireblocks MPC · protocol security</small></div><span class="finding-badge">MPC</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">NS</div><div><strong>HDTN BPSec missing-operation bypass to root RCE</strong><small>NASA VDP · server-side security</small></div><span class="finding-badge">RCE</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">DH</div><div><strong>Regional Admin can delete higher-privileged Global Admin</strong><small>DHS VDP · privilege boundary</small></div><span class="finding-badge">AUTHZ</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">AR</div><div><strong>Pre-admitted transactions bypass address denylist enforcement</strong><small>Arc · blockchain policy</small></div><span class="finding-badge">CHAIN</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">RI</div><div><strong>Whois route authorisation bypass via mnt-routes gap</strong><small>RIPE NCC · access control</small></div><span class="finding-badge">AUTHZ</span></div>
+      <div class="finding-card-v4"><div class="finding-brand">AV</div><div><strong>Kafka producer can trigger unintended mass UPDATE</strong><small>Aiven · data platform</small></div><span class="finding-badge">DATA</span></div>
+    </div>
+  </div>
+
+  <aside class="research-column">
+    <div class="home-section-head">
+      <div class="home-title"><div class="home-title-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a3 3 0 0 1 3-3h5v18H7a3 3 0 0 0-3 3z"/><path d="M20 5a3 3 0 0 0-3-3h-5v18h5a3 3 0 0 1 3 3z"/></svg></div><div><h2>Research Areas</h2><p>Core areas of focus and repeated investigation.</p></div></div>
+    </div>
+    <div class="research-stack">
+      <div class="research-card-v4"><div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><div><strong>Authorization & Authentication</strong><small>RBAC, ABAC, role transitions, stale access</small></div></div>
+      <div class="research-card-v4"><div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div><div><strong>API & Web Security</strong><small>REST, GraphQL, business logic, object boundaries</small></div></div>
+      <div class="research-card-v4"><div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 18a4 4 0 0 1 1-7.9A6 6 0 0 1 17.5 8 5 5 0 1 1 18 18z"/></svg></div><div><strong>Cloud & Infrastructure</strong><small>IAM, data platforms, server-side processing</small></div></div>
+      <div class="research-card-v4"><div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M2 20a6 6 0 0 1 12 0M14 19a4 4 0 0 1 8 0"/></svg></div><div><strong>Multi-tenant & Integrations</strong><small>Cross-tenant isolation, plugins, delegated actions</small></div></div>
+      <div class="research-card-v4"><div class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 8 4v10l-8 4-8-4V7z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg></div><div><strong>AI Agents & Protocols</strong><small>Agent authorization, cryptographic and blockchain logic</small></div></div>
+    </div>
+  </aside>
+</section>
+
+<section class="home-shell home-section">
+  <div class="home-section-head">
+    <div class="home-title"><div class="home-title-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V6l8-3 8 3v15M8 9h2M14 9h2M8 13h2M14 13h2M8 17h2M14 17h2"/></svg></div><div><h2>Selected Engagements</h2><p>Concrete programs represented in the research tracker.</p></div></div>
+    <a class="home-link" href="engagements.html">View All →</a>
+  </div>
+  <div class="engagement-row-v4">
+    <div class="engagement-v4"><div class="engagement-mark">M</div><b>Mattermost</b><small>Bugcrowd</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">O</div><b>OpenAI</b><small>Bugcrowd</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">F</div><b>Fireblocks</b><small>Bugcrowd</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">N</div><b>NASA</b><small>VDP</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">D</div><b>DHS</b><small>VDP</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">A</div><b>Arc</b><small>HackerOne</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">R</div><b>RIPE NCC</b><small>Intigriti</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">AS</div><b>Asana</b><small>Bugcrowd</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">AV</div><b>Aiven</b><small>Bugcrowd</small></div>
+    <div class="engagement-v4"><div class="engagement-mark">CH</div><b>ClickHouse</b><small>Research</small></div>
+  </div>
+</section>
 </main>
+
 <footer class="site-footer"><div class="container footer-grid"><div><div class="brand"><span class="brand-mark">AE</span><span class="brand-copy"><strong>Abderrahim Elkahlaoui</strong><span>Security Researcher</span></span></div><div class="footer-copy">Responsible research · conservative disclosure · reproducible evidence</div></div><nav class="footer-nav"><a href="index.html">Home</a><a href="findings.html">Findings</a><a href="engagements.html">Engagements</a><a href="research.html">Research</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></footer>
-<script src="assets/app.js" defer></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abderrahim Elkahlaoui","jobTitle":"Security Researcher","url":"https://elkahlaoui1982.github.io/","sameAs":["https://github.com/Elkahlaoui1982"]}</script>
+<script src="assets/app.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abderrahim Elkahlaoui","jobTitle":"Security Researcher","url":"https://elkahlaoui1982.github.io/","sameAs":["https://github.com/Elkahlaoui1982"]}</script>
 </body></html>
