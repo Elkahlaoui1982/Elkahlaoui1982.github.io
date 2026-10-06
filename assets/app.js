@@ -14,37 +14,11 @@
   }
 
   const search = document.getElementById('finding-search');
-  const platform = document.getElementById('platform-filter');
-  const year = document.getElementById('year-filter');
-  const reset = document.getElementById('reset-filters');
-  const rows = [...document.querySelectorAll('[data-finding]')];
-  const empty = document.getElementById('findings-empty');
-  const count = document.getElementById('findings-count');
-
-  function applyFilters() {
-    if (!rows.length) return;
-    const q = (search?.value || '').trim().toLowerCase();
-    const platformValue = platform?.value || 'all';
-    const yearValue = year?.value || 'all';
-    let visible = 0;
-    rows.forEach((row) => {
-      const matchesSearch = !q || row.dataset.title.includes(q) || row.dataset.program.includes(q);
-      const matchesPlatform = platformValue === 'all' || row.dataset.platform === platformValue;
-      const matchesYear = yearValue === 'all' || row.dataset.year === yearValue;
-      const show = matchesSearch && matchesPlatform && matchesYear;
-      row.hidden = !show;
-      if (show) visible += 1;
-    });
-    if (empty) empty.hidden = visible !== 0;
-    if (count) count.textContent = `${visible} finding${visible === 1 ? '' : 's'}`;
+  if (search) {
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (q) {
+      search.value = q;
+      search.dispatchEvent(new Event('input', { bubbles: true }));
+    }
   }
-
-  [search, platform, year].forEach((control) => control?.addEventListener('input', applyFilters));
-  reset?.addEventListener('click', () => {
-    if (search) search.value = '';
-    if (platform) platform.value = 'all';
-    if (year) year.value = 'all';
-    applyFilters();
-    search?.focus();
-  });
 })();
